@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style.css">
+     <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Druga Stranica</title>
+   
+</head>
+<div class="grad1">
+<body>
+    <ul class="navigacija">
+  <li><a href="index.html">Početna</a></li>
+  <li><a class="active" href="drugi.html">Druga stranica</a></li>
+   <li><a href="https://www.grf.unizg.hr/">Web stranica</a></li>
+   <li><a href="PDF/PDF.pdf">PDF</a></li> 
+</ul>
+
+<div class="gallery">
+  <img src="slike/sl1.JPG" alt="slika1" class="gallery-item" onclick="openModal('modal1', 'slika1')" width="600" height="400">
+  <img src="slike/sl2.JPG" alt="slika2" class="gallery-item" onclick="openModal('modal2', 'slika2')" width="600" height="400">
+  <img src="slike/sl3.jpg" alt="slika3" class="gallery-item" onclick="openModal('modal3', 'slika3')" width="600" height="400">
+</div>
+
+<div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="slike/sl1.JPG" alt="slika1" class="modal-content" width="600" height="400">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="slike/sl2.JPG" alt="slika2" class="modal-content" width="600" height="400">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="slike/sl3.jpg" alt="slika3" class="modal-content" width="600" height="400">
+  <div class="caption"></div>
+</div>
+<video class="video" controls>
+ <source src="video/video1.mp4" type="video/mp4">
+  <video autoplay muted loop>
+    <source src="video/video1.mp4" type="video">
+  </video>
+</video>
+
+<iframe class="video2" src="https://youtu.be/K87aFjB7Ff0?si=6WUtUv356kck6rBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<audio class="audio" controls>
+  <source src="audio/audio.mp3" type="audio/mpeg">
+
+</audio>
+</div>
+
+
+</body>
+</html>
